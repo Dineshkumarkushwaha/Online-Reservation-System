@@ -61,6 +61,18 @@ public class OnlineReservationSystem {
             name = scanner.nextLine();
         } while (!name.matches("[a-zA-Z ]+"));
 
+        String Age;
+        do {
+            System.out.print("Enter Your Age : ");
+            Age = scanner.nextLine();
+        } while (!Age.matches("\\d{2}"));
+
+        String Gender;
+        do {
+            System.out.print("Enter Your Gender : ");
+            Gender = scanner.nextLine();
+        } while (!Gender.matches("^(Male|Female|m|M|F|f|MALE|FEMALE|male|female)$"));
+
         String trainNumber;
         do {
             System.out.print("Enter Train number : ");
